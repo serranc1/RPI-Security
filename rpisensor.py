@@ -107,7 +107,7 @@ def email():
     smtpUser = 'xxxxxx@gmail.com'
     smtpPass = 'xxxxxx'
 
-    toAdd = 'morrowrayx@gmail.com'
+    toAdd = 'yyyyyy@gmail.com'
     fromAdd = smtpUser
 
     subject = 'Alert! Suspicious activity detected!'
