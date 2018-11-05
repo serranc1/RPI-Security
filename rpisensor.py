@@ -104,8 +104,8 @@ def ConvertSwitch(data, places):
 #email
 def email():
     
-    smtpUser = 'christianserrano64@gmail.com'
-    smtpPass = '1Cheese_cake'
+    smtpUser = 'xxxxxx@gmail.com'
+    smtpPass = 'xxxxxx'
 
     toAdd = 'morrowrayx@gmail.com'
     fromAdd = smtpUser
