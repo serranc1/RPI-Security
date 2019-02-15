@@ -1,0 +1,11 @@
+<h3>Top Dogs</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let watchdog of watchdogs" class="col-1-4"
+	routerLink="/detail/{{watchdog.id}}">
+    <div class="module watchdog">
+      <h4>{{watchdog.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-watchdog-search></app-watchdog-search>

@@ -1,0 +1,21 @@
+<h2>My Watchdogs</h2>
+
+<div>
+  <label>Watchdog name:
+    <input #watchdogName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(watchdogName.value); watchdogName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="watchdogs">
+  <li *ngFor="let watchdog of watchdogs">
+	<a routerLink="/detail/{{watchdog.id}}">
+    <span class="badge">{{watchdog.id}}</span> {{watchdog.name}}
+	</a>
+	<button class="delete" title="delete watchdog"
+		(click)="delete(watchdog)">x</button>
+  </li>
+</ul>

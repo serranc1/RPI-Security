@@ -1,0 +1,12 @@
+<div *ngIf ="watchdog">
+<h2>{{watchdog.name | uppercase}} Details</h2>
+<div><span>ID: </span>{{watchdog.id}}</div>
+<div>
+  <label>Name:
+    <input [(ngModel)]="watchdog.name" placeholder="name">
+  </label>
+</div>
+<div><span>Guarding: </span>{{watchdog.guarding}}</div>
+<button (click)="goBack()">go back</button>
+<button (click)="save()">save</button>
+</div>
